@@ -5,7 +5,7 @@
 }
 main{
     width: 100vw;
-    height: 100vh;;
+    height: 100vh;
     border: 6px solid white; 
 
 }
@@ -53,6 +53,7 @@ main{
      
     
 }
+
     .artheader{
         width:98%;
         height: 89%;
