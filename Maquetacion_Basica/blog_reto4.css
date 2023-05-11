@@ -32,7 +32,7 @@ main{
 
 }
 h1{
-    border: 3px solid red;
+    
     height: 15%;
     text-align: center;
     display:flex;
@@ -40,7 +40,6 @@ h1{
     justify-content: center;
 }
 .trama{
-    border:3px solid blue;
     width: 100%;
 
     display:flex;
@@ -51,7 +50,7 @@ h1{
 }
 .trama_hijo{
     width:80%;
-    border:3px solid purple;
+    
 
     display:flex;
     flex-direction: row;

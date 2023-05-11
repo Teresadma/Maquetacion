@@ -26,7 +26,7 @@ main{
 }
 .imagenes{
     width: 100%;    
-    border: 3px solid red;
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;    
