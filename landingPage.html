@@ -34,13 +34,14 @@
                         <div class="form">Formulario</div>
                         <div class="cajita">
                             <div class="preguntas">
-                                <p><input type="text" name="nombre" placeholder="NOMBRE"></p>
-                                <p><input type="text" name="apellidos" placeholder="APELLIDOS"></p>
-                                <p><input type="text" name="origen" placeholder="ORIGEN"></p>
-                                <p><input type="text" name="destino" placeholder="DESTINO"></p>
-                                <p><input type="text" name="numPersonas" placeholder="NÚMERO DE PERSONAS"></p>
-                                <p><input type="text" name="fecha" placeholder="FECHA"></p>
+                                <p><input type="text" id="nombre" placeholder="NOMBRE"></p>
+                                <p><input type="text" id="apellidos" placeholder="APELLIDOS"></p>
+                                <p><input type="text" id="origen" placeholder="ORIGEN"></p>
+                                <p><input type="text" id="destino" placeholder="DESTINO"></p>
+                                <p><input type="text" id="numPersonas" placeholder="NÚMERO DE PERSONAS"></p>
+                                <p><input type="text" id="fecha" placeholder="FECHA"></p>
                             </div>
+                            <div id="print"></div>
                             <img src="./fotos/imagen5.jpg"/>
                         </div>                    
                     </div>                    
@@ -56,8 +57,8 @@
                 </div>
             </div>
             <div class="botones">
-                <button class="infor">Información</button>
-                <button class="filtrar">Filtrar</button>
+                <button class="infor" onclick="info()">Información</button>
+                <button class="filtrar" onclick="filtrar()">Filtrar</button>
             </div>
         </div>
         <footer class="pie">
@@ -67,6 +68,7 @@
             <div>Impacto ambiental</div>
         </footer>
         
-    </main>    
+    </main> 
+    <script src="landingPage.js"></script>   
 </body>
 </html>

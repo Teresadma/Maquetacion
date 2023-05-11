@@ -2,12 +2,13 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 main{
     width: 100vw;
     height: 100vh; 
-    font-family: 'Courier New', Courier, monospace;
+    
 
     display:flex;
     flex-direction: column;   
@@ -45,15 +46,21 @@ main{
 .caract{
     height: 60%;
     
+    
 }
 .conocer{
     height: 10%;
     font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .parrafo{
-    height: 40%;
-    font-size: 14px 
-    
+    height: 60%;
+    font-size:0.87rem;   
+
+    display:flex;
+    flex-direction: column;  
 }
 .formulario{
     width: 100%;
@@ -71,27 +78,30 @@ main{
     justify-content: center;
 }
 .cajita{
-    
+    width: 100%;
     height: 80%;
+    
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.print{
+    width:15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 .preguntas{
-    width: 40%;
-    height: 100%;
-    
+    width: 15%;  
     
     display:flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.boton{
-    height: 15%;
-    width: 15%;
-}
+
 .cajita img{
-    width: 45%;
+    width: 35%;
     
 }
 .tarjetas{
