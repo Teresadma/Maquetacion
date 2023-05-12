@@ -20,7 +20,7 @@ main{
 
 .cabecera{
     width: 100%;
-    height: 7%;
+    height: 3%;
     background-color: #000000;
     
 
@@ -28,7 +28,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
 }
     .cabecera img{
         width:11%;
@@ -56,8 +56,19 @@ main{
         width: 40%;
         border:2px solid pink;
 
-        color: rgb(0,208,130);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        
     }
+        .titulo div{
+            font-size: 50px;
+            color: rgb(0,208,130);
+            border: 2px solid red;
+            text-align: center;
+        }
         
     .publico{
         width: 60%;
