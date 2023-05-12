@@ -15,13 +15,25 @@ function info () {
     // console.log(objPersona)
     arrayPersona.push(objPersona)
     console.log(arrayPersona)
-    document.getElementById("print").innerHTML = nombre + apellidos;
+    // document.getElementById("print").innerHTML = nombre + apellidos;
+    document.getElementById("print").innerHTML = `<div>${nombre}</div>
+                                                <div>${apellidos}</div>
+                                                <div>${origen}</div>
+                                                <div>${destino}</div>
+                                                <div>${numPers}</div>
+                                                <div>${fecha}</div>` 
 }
 let arrayPersona = [];    
 
 function filtrar(){
 let arrayFiltrado = arrayPersona.filter(Persona => (Persona.destination == "mallorca")||(Persona.destination == "galicia")||(Persona.destination == "canarias"));      
 console.log(arrayFiltrado)
+document.getElementById("print").innerHTML = `<div>${nombre}</div>
+                                                <div>${apellidos}</div>
+                                                <div>~${origen}</div>
+                                                <div>${destino}</div>
+                                                <div>${numPers}</div>
+                                                <div>${fecha}</div>` 
 }
 
 
