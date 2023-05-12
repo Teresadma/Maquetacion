@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 400;
+    letter-spacing: 0px;
+    font-style: normal; */
+}
+
+main{
+    width: 100vw;
+    height: 100vh; 
+
+    display:flex;
+    flex-direction: column; 
+    border:7px solid blue;
+}
+
+/* .cabecera{
+    width: 100%;
+    height: 90%;
+    background-color: #000000;
+    border:2px solid red;
+} */
