@@ -15,12 +15,67 @@ main{
 
     display:flex;
     flex-direction: column; 
-    border:2px solid blue;
+    
 }
 
 .cabecera{
     width: 100%;
-    height: 4.5%;
+    height: 7%;
     background-color: #000000;
-    border:2px solid red;
+    
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+    .cabecera img{
+        width:11%;
+        height: 100%;;
+    }
+    .cabecera div{
+        width: 89%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .cabecera a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+.principal{
+    height: 30%;
+    border:3px solid red;
+
+    display:flex;
+    flex-direction: row;
+}
+    .titulo{
+        width: 40%;
+        border:2px solid pink;
+
+        color: rgb(0,208,130);
+    }
+        
+    .publico{
+        width: 60%;
+        border:2px solid green;
+    }
+.valoraciones{
+    height: 10%;
+    border:2px solid yellow;
+}
+.servicios{
+    height: 25%;
+    border:2px solid purple;
+}
+.alumnos{
+    height: 20%;
+    border:2px solid orange;
+}
+.pie{
+    height: 5%;
+    border:2px solid green;
 }
