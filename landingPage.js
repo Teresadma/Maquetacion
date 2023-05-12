@@ -26,13 +26,12 @@ function info () {
 let arrayPersona = [];    
 
 function filtrar(){
-let arrayFiltrado = arrayPersona.filter(Persona => (Persona.destination == "mallorca")||(Persona.destination == "galicia")||(Persona.destination == "canarias"));      
+let arrayFiltrado = arrayPersona.filter(persona => (persona.destination == "mallorca")||(persona.destination == "galicia")||(persona.destination == "canarias"));      
 console.log(arrayFiltrado)
 document.getElementById("print").innerHTML = `<div>${nombre}</div>
                                                 <div>${apellidos}</div>
-                                                <div>~${origen}</div>
+                                                <div>${origen}</div>
                                                 <div>${destino}</div>
-                                                <div>${numPers}</div>
                                                 <div>${fecha}</div>` 
 }
 
