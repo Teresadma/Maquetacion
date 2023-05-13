@@ -118,26 +118,42 @@ main{
     display:flex;
     flex-direction: column;
 }
-    /* .logos{
-        border:2px solid red;
-        width: 20%;
+.becas{
+    height: 40%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    .boton{
+        width: 100%;
         display:flex;
         flex-direction: row;
-        justify-content: space-around;
-       align-items: center;
-       
+        align-items: center;
+        justify-content: space-between;
     }
-        .logos img{
-            width: 50%;         
+        .boton button{
+            height: 55%;
+            
         }
-        .detalles{
-            display:flex;
-            justify-content: column;
-            align-items: center;
-        } */
+    .becas div{
+        width: 75%;
+    }
+        .becas div div{
+            font-weight: bold;
+        }
+            .becas div div span{
+                color:var(--myColorVar2);
+            }
+    .becas img{
+        width: 20%;      
+        border:2px solid blue;
+    }
 .servicios{
     height: 25%;
     border:2px solid purple;
+    background-color: var(--myColorVar3);
+
     display:flex;
     flex-direction: column;
     justify-content: space-around;
@@ -147,11 +163,14 @@ main{
         width:85%;
         text-align: center;
     }
-    .carrera{
-        font-size: 30px;
-        font-weight: bold;
-        color: var(--myColorVar4);
-    }
+        .centrar p{
+            color: var(--myColorVar)
+        }
+        .carrera{
+            font-size: 30px;
+            font-weight: bold;
+            color: var(--myColorVar4);
+        }
         
     .profesional{
         width: 95%;
@@ -165,6 +184,9 @@ main{
             flex-direction: column;
             justify-content: space-between;
         }
+        .profesional p{
+            color: var(--myColorVar)
+        }
         .imp{
             color: var(--myColorVar4);
             font-weight: bold;
@@ -177,8 +199,42 @@ main{
 .alumnos{
     height: 20%;
     border:2px solid orange;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
 }
+    .alumnos div{
+        width: 60%;
+        font-size: 20px;
+        border:2xp solid red;
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .alumna{
+        font-weight: bold;
+    }
+
+
 .pie{
+    background-color: var(--myColorVar3);
     height: 5%;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
     border:2px solid green;
 }
+    .pie div{
+        color: var(--myColorVar)
+    }
+    .pie a{
+        color:var(--myColorVar);
+        text-decoration: none;
+    }
