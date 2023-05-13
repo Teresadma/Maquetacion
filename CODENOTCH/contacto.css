@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --myColorVar: #ffffff;
+    --myColorVar2: #0000ff;
+    --myColorVar3: #000000;
+    --myColorVar4: #00d082;
+
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    width: 100vw;
+    height: 100vh;     
+}
+
+    .cabecera{
+        width: 100%;
+        height: 6%;
+        background-color: var(--myColorVar3);
+        
+
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* position: fixed; */
+    }
+        .cabecera img{
+            width:11%;
+            height: 100%;;
+        }
+        .cabecera div{
+            width: 89%;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .cabecera a{
+            color: var(--myColorVar);
+            text-decoration: none;
+        }
+    .caja{
+        height: 60%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+            .caja h1{
+                text-align: center;
+                color:var(--myColorVar2)
+            }
+                .caja h1 p{
+                    color:var(--myColorVar3);
+                }
+        .preguntas{
+            height: 70%;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+    .logo{
+        height: 30%;
+        margin-left: 5%;
+    }
