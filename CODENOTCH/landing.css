@@ -222,7 +222,6 @@ main{
 
 .pie{
     background-color: var(--myColorVar3);
-    height: 5%;
 
     display:flex;
     flex-direction: row;

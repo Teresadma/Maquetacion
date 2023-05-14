@@ -21,7 +21,7 @@
 
 main{
     width: 100vw;
-    height: 200vh; 
+    height: 140vh; 
 
     display:flex;
     flex-direction: column; 
@@ -30,8 +30,8 @@ main{
 
 .cabecera{
     width: 100%;
-    height: 3%;
-    background-color: var(--myColorVar3);
+    height: 4%;
+    background-color: var(--myColorVar2);
     
 
     display:flex;
@@ -54,4 +54,102 @@ main{
         color: var(--myColorVar);
         text-decoration: none;
     }
+.centro{
+    height: 20%;
+    background-color: var(--myColorVar3);
+    border:2px solid blue;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .titulo{    
+        width: 85%;
+        height: 100%;
+        border:2px solid red;
+        
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+        .titulo h1{
+            color:var(--myColorVar4);
+            height: 20%;
+            font-size:40px;
+        }
+        .titulo p{
+            height: 60%;
+            color:var(--myColorVar)
+        }
+.profe{
+    border:3px solid green;
+    text-align: center;
+    font-size:xx-large;
+    color:var(--myColorVar4)
+}
+.textoProfes{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    .textoProfes div div{
+        height: 10%;
+        font-weight: bold;
+        font-size: 20px;
+        
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .jose{
+        width: 30%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        align-items: center;
+    }
+        .jose img{
+            width:45%;
+            
 
+        }
+    .menchu{
+        width:30%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+        .menchu img{
+            width: 45%;
+        }
+    .dani{
+        width:30%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+        .dani img{
+            width: 45%;
+        }
+.pie{
+    background-color: var(--myColorVar3);
+        
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+          
+    border:2px solid green;
+}
+    .pie div{
+        color: var(--myColorVar)
+    }
+    .pie a{
+        color:var(--myColorVar);
+        text-decoration: none;
+    }
