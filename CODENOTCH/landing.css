@@ -112,32 +112,36 @@ main{
                 color: var(--myColorVar2)
             }
 .valoraciones{
-    height: 10%;
+    height: 20%;
     border:2px solid yellow;
 
     display:flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 .becas{
-    height: 40%;
+    height: 100%;
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
     .boton{
-        width: 100%;
+        border:2px solid red;
+       
         display:flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: row;        
         justify-content: space-between;
     }
         .boton button{
             height: 55%;
+            width: 30%;
             
         }
     .becas div{
         width: 75%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
         .becas div div{
             font-weight: bold;
@@ -146,7 +150,8 @@ main{
                 color:var(--myColorVar2);
             }
     .becas img{
-        width: 20%;      
+        width: 20%;  
+            
         border:2px solid blue;
     }
 .servicios{
@@ -208,7 +213,6 @@ main{
     .alumnos div{
         width: 60%;
         font-size: 20px;
-        border:2xp solid red;
 
         display:flex;
         flex-direction: column;
@@ -227,8 +231,6 @@ main{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
-    border:2px solid green;
 }
     .pie div{
         color: var(--myColorVar)
