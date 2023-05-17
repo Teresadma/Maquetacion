@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: [x0]2fr [x1]1fr [x2]1fr [x3];
+    grid-template-rows: [y0]0.5fr [y1]1fr [y2]2fr [y3]0.5fr [y4];
+}
+    .header{
+        grid-column: x0 / x3;
+        grid-row: y0 / y1;
+        background-color: black;
+        color:white;
+        text-align: center;
+        font-size: 50px;
+        
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .grid2{
+        grid-column: x0 / x2;
+        grid-row: y1 / y3 ;
+        background-color: blue;
+        display:grid;
+        grid-template-columns: [x0]2fr [x1]1fr [x2];
+        grid-template-rows: [y0]1fr [y1]2fr [y2];
+    }
+        .contenido{
+            margin:10px;
+            padding-left: 5px;
+            grid-column: x0 / x2;
+            grid-row: y0 / y1;
+            color:white;
+            border:1px solid white;
+            font-size: 50px;
+        }
+        .texto1{
+            grid-column: x0 / x1;
+            grid-row: y1 / y2;
+            padding-left: 5px;
+            padding-top:10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            border:1px solid white;
+            color:white;
+        }
+        .texto2{
+            grid-column: x1 / x2;
+            grid-row: y1 / y2;
+            padding-left: 5px;
+            padding-top:10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            color:white;
+            border:1px solid white;
+        }
+    .grid3{
+        grid-column: x2 / x3;
+        grid-row: y1 / y3;
+        background-color: aquamarine;
+        display:grid;
+        grid-template-columns: [x0]1fr [x1];
+        grid-template-rows: [y0]1fr [y1]1fr [y2]1fr [y3]1fr [y4];
+    }
+        .menu{
+            grid-column: x0 / x1;
+            grid-row: y0 / y1;
+            border:2px solid black;
+            margin: 10px 10px 5px 10px;
+            color:white;
+            font-size: 30px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu1{
+            grid-column: x0 / x1;
+            grid-row: y1 / y2;
+            background-color: black;
+            margin-left: 10px;
+            margin-right: 10px;
+            color:white;
+            
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu2{
+            grid-column: x0 / x1;
+            grid-row: y2 / y3;
+            margin:10px 5px 10px 5px;
+            background-color: black;
+            margin: 5px 10px 5px 10px;
+            color:white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu3{
+            grid-column: x0 / x1;
+            grid-row: y3 / y4;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: black;
+            color:white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }        
+    .grid4{
+        grid-column: x0 / x3;
+        grid-row: y3 / y4;
+        background-color: 	#962fbf;
+        display:grid;
+        grid-template-columns: [x0]1fr [x1]1fr [x2];
+        grid-template-rows: [y0]1fr [y1];
+    }
+        .footer{
+            grid-column: x0 / x1;
+            grid-row: y0 / y1;
+            margin:5px;
+            border:2px solid black;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color:white;
+        }
+        .contacto{
+            grid-column: x1 / x2;
+            grid-row: y0 / y1;
+            margin-top:5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border:2px solid black;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color:white;
+
+        }

@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 0.5fr 1fr 1fr 0.5fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+    .hijoA{
+        text-align: center;
+        background-color:#adff00;
+    }
+    .hijoB{
+        text-align: center;
+        background-color: black;
+        color:white;
+    }
+    .hijoC{
+        text-align: center;
+        background-color: #adff00;
+    }
+    .hijoD{
+        text-align: center;
+        background-color: black;
+        color:white;
+    }
+    .hijoE{
+        text-align: center;
+        background-color: #adff00;
+    }
+    .hijoF{
+        text-align: center;
+        background-color: black;
+        color:white;
+    }

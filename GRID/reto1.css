@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 37.5% 25% 37.5%;
+    grid-template-rows: 50% 50%;
+}
+    .hijo1{
+        text-align: center;
+        background-color: #0bff01;
+    }
+    .hijo2{
+        text-align: center;
+        background-color: 	#ff9a00;
+    }
+    .hijo3{
+        text-align: center;
+        background-color: 	#ff7400;
+    }
+    .hijo4{
+        text-align: center;
+        background-color:#fe0000;
+    }
+    .hijo5{
+        text-align: center;
+        background-color:#011efe;
+    }
+    .hijo6{
+        text-align: center;
+        background-color:#fdfe02
+    }
