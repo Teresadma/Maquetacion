@@ -1,0 +1,223 @@
+@import url('https://fonts.cdnfonts.com/css/billabong');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    .cajita{
+        margin-top: 32px;
+        padding-bottom: 32px;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        border:1px solid red;
+
+    }
+        .movil{
+            width: 380.312px;
+            height: 540.141px;
+            margin-right: 32px;
+            margin-bottom: 12px;
+        }
+        .info{
+            margin-top: 12px;
+            width: 350px;
+            height: 992px;
+            font-family: Arial, Helvetica, sans-serif;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            
+
+        }
+            .login{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #bebebe;
+                width: 348px;
+                height: 348.44px;
+
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+                .insta{
+                    font-family: 'Billabong', sans-serif;
+                    margin-top:36px;
+                    margin-bottom: 12px;
+                    width: 175px;
+                    height: 55px;
+                    font-size: 45px;
+                }
+                .datos{
+                    width: 348px;
+                    height: 244.9px;
+                    margin-bottom: 10px;
+                }
+                    #name{
+                        margin-left: 40px;
+                        margin-bottom: 6px;
+                        margin-right: 40px;
+                        width: 268px;
+                        height: 38px;
+                        border:1px solid #bebebe;
+                    }
+                    #password{
+                        margin-left: 40px;
+                        margin-bottom: 6px;
+                        margin-right: 40px;
+                        width: 268px;
+                        height: 38px;
+                        border:1px solid #bebebe;
+                        
+                    }
+                    .entrar{
+                        margin:8px 40px 8px 40px;
+                        border-radius: 0.5em;
+                        border:none;
+                        width: 268px;
+                        height: 32px;
+                        background-color:#5faaff;      color:white;
+                        font-weight: bold; 
+                    }
+                    .separacion{
+                        margin:10px 40px 18px 40px;
+                        display:flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        .raya{
+                            border-bottom:1px solid #bebebe;                  
+                            width: 111.094px;
+                        }
+                        .circulo{
+                            border:1px solid grey;
+                            border-radius: 2cm;
+                            width: 9.828px;
+                            height: 10px;
+                            margin-left: 18px;
+                            margin-right: 18px;
+                            
+                        }
+                    .facebook{
+                        margin:10px 40px 18px 40px;
+                        width: 268px;
+                        height: 20px;
+                        font-size: 14px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: bold;
+
+                        display:flex;
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+                        .facebook img{
+                            margin-right: 8px;
+                            width: 19px;
+                            height: 16px;
+                        }
+                    .forgot{
+                        margin-top:12px;
+                        width: 348px;
+                        height: 16px;
+                        font-size: 12px;
+                        text-align: center;
+
+                    }
+                .registro{
+                    border:1px solid #bebebe;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                    width: 348px;
+                    /* NO ME COGE EL ALTO QUE YO LE PIDO */
+                    height: 41px;
+                    text-align: center;
+                    font-size: 14px;
+                    
+                }
+             
+                    .registro span{
+                        color:#5faaff;
+                        font-weight: bold;
+                    }
+                .download{
+                    margin: 20px 10px 20px 10px;
+                    text-align: center;
+                    width: 310px;
+                    height: 11px;
+                    font-size: 14px;
+                }
+                .platform{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+                .google{
+                    margin-right: 8px;
+                    width: 120.281px;
+                    height: 56px;
+                }
+                .microsoft{
+                    width: 110.766px;
+                    height: 44px;
+                }
+    footer{
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .caja1{
+            width: 1110px;
+            height: 82px;
+            margin-bottom: 52px;
+            
+        }
+            .caja2{
+                width: 1110px;
+                height: 23px;
+                margin-top:24px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color:grey;
+
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .caja3{
+                margin-top:12px;
+                margin-bottom: 12px;
+                width: 1344px;
+                height: 11px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color:grey;
+
+
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                .meta{
+                    margin-left: 16px;
+                }
+@media screen and (max-width:1085px){
+    .caja2{
+        flex-wrap: wrap;
+    }
+}
+                        
+
