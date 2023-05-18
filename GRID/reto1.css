@@ -7,8 +7,8 @@
 .grid{
     height: 100vh;
     display:grid;
-    grid-template-columns: 37.5% 25% 37.5%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 500px 250px 500px;
+    grid-template-rows: 300px 300px;
 }
     .hijo1{
         text-align: center;
