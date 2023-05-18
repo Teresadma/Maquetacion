@@ -3,3 +3,91 @@
     padding: 0;
     box-sizing: border-box;
 }
+.gridArea{
+    height: 100vh;
+    display:grid;
+
+    grid-template-areas: 
+        'header header imagen'
+        'gridArea2 gridArea3 gridArea3'
+        'gridArea2 gridArea3 gridArea3'
+        'gridArea2 gridArea3 gridArea3'
+        'gridArea2 gridArea3 gridArea3'
+        'footer footer footer';
+}
+
+    .header{
+        grid-area: header;
+        background-color: #800000;
+        text-align: center;
+        color:white;
+        padding-top:5px;
+    }
+    .imagen{
+        grid-area: imagen;
+        background-color: #400000;
+        text-align: center;
+        color:white;
+        padding-top:5px;
+    }
+    .gridArea2{
+        grid-area: gridArea2;
+        background-color:#e67a38;
+        
+        display:grid;
+
+        grid-template-areas: 
+            'aside'
+            'vacio'
+            'aside2';
+    }
+        .aside{
+            grid:aside;
+            margin:10px;
+            background-color: white;
+            color: #e67a38;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .vacio{
+            grid:vacio;
+        }
+        .aside2{
+            grid:aside2;
+            margin:10px;
+            background-color: white;
+            color: #e67a38;
+            text-align: center;
+            padding-top: 5px;
+        }
+    .gridArea3{
+        grid-area: gridArea3;
+        background-color:#ff0000;
+        color:white;
+
+        display:grid;
+
+        grid-template-areas: 
+            'contenido'
+            'texto';
+    }
+        .contenido{
+            border:1px solid white;
+            margin:10px 10px 2.5px 10px;
+            padding-top: 5px;
+            text-align: center;
+        }
+        .texto{
+            border:1px solid white;
+            margin:2.5px 10px 10px  10px;
+            padding-top: 5px;
+            text-align: center;
+        }
+     .footer{
+        grid-area: footer;
+        background-color:#400000;
+        color:white;
+        padding-top:5px;
+        text-align: center;
+    }
+    
