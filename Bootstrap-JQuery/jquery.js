@@ -69,17 +69,17 @@
     });
     jQuery(() => {
         $("#carrito").on("click", () => {
+            let suma = 0;
+            imprimir="";
             
             for (let i=0;i<arrayPrenda.length;i++){
-                    $("#cesta").append(`<li>${arrayPrenda[i].prenda} ${arrayPrenda[i].precio} </li>`) ;
+                   imprimir += `<li>${arrayPrenda[i].prenda} ${arrayPrenda[i].precio} </li>`;
+                    suma += arrayPrenda[i].precio;
+                    console.log(suma)
             }
-            let suma = 0;
-            for (let i=0;i<arrayPrenda.length;i++) {
-                suma += arrayPrenda[i].precio;
-                      
-            }
-            $("#total").append(`PRECIO TOTAL: ${suma}`) 
-            arrayPrenda = [];
+            
+            $("#total").html(`PRECIO TOTAL: ${suma}`);
+            $("#cesta").html(imprimir);                
         });
     });
 
