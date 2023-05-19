@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="jquery.js"></script>
   </head>
   <body>
 
@@ -15,9 +18,9 @@
           <a class="navbar-brand" href="#">
             <img src="./fotos/nash!.png" alt="nash" width="60" height="60">
           </a>       
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
             <span class="navbar-toggler-icon"></span>
-          </button> -->
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -37,99 +40,131 @@
               </li>
             </ul>
             <form class="d-flex" role="search">              
-              <button class="btn btn-outline-success" type="submit" style="background-color: white; border:black; color: black;font-size:13px">CARRITO</button>
+              <button type="button" id="carrito" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: white; border:black; color: black;font-size:13px" id="carrito">CARRITO</button>
             </form>
           </div>
         </div>
       </nav>
     <!-- FINAL BARRA NAVEGADOR -->
     <!-- CONTENEDORES -->
-    <div class="row d-flex justify-content-center">
+    <div class="row justify-content-center">
       <div class="row d-flex justify-content-center mt-5 mb-3">
         <!-- CONTENEDOR 1 -->
-        <div class="card px-2 mx-5" style="width:250px; height:550px;" >
+        <div class="card px-2 mx-3" style="width:250px; height:550px;" >
           <img src="./fotos/pantalon_ancho.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Pantalón suelto gris</h5>
+            <h5 class="card-title" id="ropa">Pantalón suelto gris</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <p>20€</p>
-            <a href="#" class="btn btn-primary" style="color:white; background-color: black; border:none">Añadir al carrito</a>
+            <p id="precio">20€</p>
+            <button class="btn btn-primary" style="color:white; background-color: black; border:none" id="prenda1">Añadir al carrito</button>
           </div>
         </div>
 
         <!-- CONTENEDRO 2 -->
-        <div class="card px-2 mx-5" style="width:250px; height:550px;">
+        <div class="card px-2 mx-3" style="width:250px; height:550px;">
           <img src="./fotos/vestido_tunico.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Vestido túnico</h5>
+            <h5 class="card-title" id="ropa">Vestido túnico</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary" style="color:white; background-color: black; border:none">Añadir al carrito</a>
+            <p>18€</p>
+            <button class="btn btn-primary" style="color:white; background-color: black; border:none" id="prenda2">Añadir al carrito</button>
           </div>
         </div>
 
         <!-- CONTENEDOR 3 -->
-        <div class="card px-2 mx-5" style="width:250px; height:550px;">
+        <div class="card px-2 mx-3" style="width:250px; height:550px;">
           <img src="./fotos/falda_print.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Falda Mid Print</h5>
+            <h5 class="card-title" id="ropa">Falda Mid Print</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"style="color:white; background-color: black; border:none">Añadir al carrito</a>
+            <p>12€</p>
+            <button class="btn btn-primary"style="color:white; background-color: black; border:none" id="prenda3">Añadir al carrito</button>
           </div>
         </div>
 
         <!-- CONTENEDOR 4 -->
-        <div class="card px-2 mx-5" style="width:250px; height:550px;">
+        <div class="card px-2 mx-3" style="width:250px; height:550px;">
           <img src="./fotos/cardigan_largo_rayas.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Cardigan Largo Rayas</h5>
+            <h5 class="card-title" id="ropa">Cardigan Largo Rayas</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"style="color:white; background-color: black; border:none">Añadir al carrito</a>
+            <p>22€</p>
+            <button class="btn btn-primary"style="color:white; background-color: black; border:none" id="prenda4">Añadir al carrito</button>
           </div>
         </div>
       </div>
       <div class="row d-flex justify-content-center">
         <!-- CONTENEDOR 5 -->
-        <div class="card px-2 mx-5" style="width:250px; height:550px;">
+        <div class="card px-2 mx-3" style="width:250px; height:550px;">
           <img src="./fotos/falda_mini_zebra.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title" id="ropa">Falda Zebra</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"style="color:white; background-color: black; border:none">Añadir al carrito</a>
+            <p>14€</p>
+            <button class="btn btn-primary"style="color:white; background-color: black; border:none" id="prenda5">Añadir al carrito</button>
           </div>
         </div>
         
         <!-- CONTENEDOR 6 -->
-        <div class="card px-2 mx-5" style="width:250px; height:550px;">
+        <div class="card px-2 mx-3" style="width:250px; height:550px;">
           <img src="./fotos/mono_overol.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Mono</h5>
+            <h5 class="card-title" id="ropa">Mono</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"style="color:white; background-color: black; border:none">Añadir al carrito</a>
+            <p>25€</p>
+            <button class="btn btn-primary"style="color:white; background-color: black; border:none" id="prenda6">Añadir al carrito</button>
           </div>
         </div>        
         
         <!-- CONTENEDOR 7 -->
-        <div class="card px-2 mx-5" style="width:250px; height:550px;">
+        <div class="card px-2 mx-3" style="width:250px; height:550px;">
           <img src="./fotos/vestido_jersey.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Vestido Jersey</h5>
+            <h5 class="card-title" id="ropa">Vestido Jersey</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"style="color:white; background-color: black; border:none">Añadir al carrito</a>
+            <p>16€</p>
+            <button class="btn btn-primary"style="color:white; background-color: black; border:none" id="prenda7">Añadir al carrito</button>
           </div>
         </div>
 
         <!-- CONTENEDRO 8 -->
-        <div class="card px-2 mx-5" style="width:250px; height:550px;">
+        <div class="card px-2 mx-3" style="width:250px; height:550px;">
           <img src="./fotos/pantalones_tallealto.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Pantalones Talle Alto</h5>
+            <h5 class="card-title" id="ropa">Pantalones Talle Alto</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary"style="color:white; background-color: black; border:none">Añadir al carrito</a>
+            <p>20€</p>
+            <button class="btn btn-primary"style="color:white; background-color: black; border:none" id="prenda8">Añadir al carrito</button>
           </div>
         </div>        
       </div>        
     </div>
     <!-- FINAL CONTENEDORES -->
+
+    <!-- CARRITO-MODAL -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Añadido al carrito</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="cesta">
+              
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+              <div id="total" class="text-danger"></div>
+              <div>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary bg-black border-black">Comprar</button>
+              </div>               
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- FINAL CARRITO-MODAL -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
