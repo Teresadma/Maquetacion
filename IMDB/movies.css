@@ -1,0 +1,12 @@
+.navbar{
+    background-color: 	#f6cf92;
+}
+
+.cajita-form{
+    width: 600px;
+    border:2px solid red;
+}
+.movies{
+    border:2px solid blue;
+    margin:20px
+}

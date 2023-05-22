@@ -2,7 +2,7 @@ export class Movie {
     //ATRIBUTOS
     public title: string;
     public releaseYear: number;
-    public actors: string;
+    public actors: string[];
     public nacionality: string;
     public director: string;
     public writer: string;
@@ -37,3 +37,24 @@ export class Movie {
         this.mainCharacterName,"\n","El productor es: ", this.producer,"\n","La distribuidora es: ", this.distributor,"\n","El género es: ", this.genre)
     }
 }
+
+let pelicula: Movie = new Movie ("Voy a llorar", 2023, "España", "Acción");
+pelicula.actors = ["Luis","Jorge","Lucia"];
+pelicula.director = "Sofia";
+pelicula.writer = "Clara";
+pelicula.language = "Español";
+pelicula.platform = "Netflix";
+pelicula.isMCU = false;
+pelicula.mainCharacterName = "Paco";
+pelicula.producer = "Pablo";
+pelicula.distributor = "Walt Disney";
+// console.log(pelicula.actors)
+
+// pelicula.printMovie()
+// document.getElementById("title").innerHTML = pelicula.title;
+let titulo = document.getElementById("title")
+titulo.innerHTML = pelicula.title;
+console.log(titulo)
+// let padre = document.createElement("div")
+// padre.appendChild(titulo)
+

@@ -25,3 +25,21 @@ var Movie = /** @class */ (function () {
     return Movie;
 }());
 exports.Movie = Movie;
+var pelicula = new Movie("Voy a llorar", 2023, "España", "Acción");
+pelicula.actors = ["Luis", "Jorge", "Lucia"];
+pelicula.director = "Sofia";
+pelicula.writer = "Clara";
+pelicula.language = "Español";
+pelicula.platform = "Netflix";
+pelicula.isMCU = false;
+pelicula.mainCharacterName = "Paco";
+pelicula.producer = "Pablo";
+pelicula.distributor = "Walt Disney";
+// console.log(pelicula.actors)
+// pelicula.printMovie()
+// document.getElementById("title").innerHTML = pelicula.title;
+var titulo = document.getElementById("title");
+titulo.innerHTML = pelicula.title;
+console.log(titulo);
+// let padre = document.createElement("div")
+// padre.appendChild(titulo)
