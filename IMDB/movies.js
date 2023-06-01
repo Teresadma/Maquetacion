@@ -1,6 +1,6 @@
 class Movie {
     //CONSTRUCTOR
-    constructor (title, releaseYear, nacionality, genre, photo,audio){
+    constructor (title, releaseYear, nacionality, genre, photo, audio = ""){
         this.title = title;
         this.releaseYear = releaseYear;
         this.nacionality = nacionality;
@@ -18,11 +18,20 @@ let grease = new Movie ("Grease",1978,"EEUU","Romance", "./grease.jpg","./grease
 let primos = new Movie ("Primos",2011,"España","Comedia","./primos.jpg")
 let xmen = new Movie ("X-Men: Primera generación",2011,"EEUU","Ciencia ficción","./xmen.jpg")
 let hp2 = new Movie ("Harry Potter y la cámara secreta",2002,"Londres","Fantasía","./hp4.jpg","./hp.mp3")
-let pelis = [gdlg,hp1,viw,ironman,primos,grease,xmen,hp2];
+let titanic = new Movie ("Titanic",1998,"EEUU","Romance","./titanic.jpg","./titanic.mp3")
+let hercules = new Movie ("Hercules",1997,"EEUU","Animación","./hercules.jpg","./hercules.mp3")
+let elreyleon = new Movie ("El rey león",1994,"EEUU","Animación","./elreyleon.jpg","./reyleon.mp3")
+let aladdin = new Movie ("Aladdin",1998,"EEUU","Animación","./aladdin.jpg","./aladdin.mp3")
+let pocahontas = new Movie ("Pocahontas",1998,"EEUU","Animación","./pocahontas.jpg","./pocahontas.mp3")
+let toystory = new Movie ("Toy Story",1994,"EEUU","Animación","./toystory.jpg","./toystory.mp3")
+let tarzan = new Movie ("Tarzan",1997,"EEUU","Animación","./tarzan.jpg","./tarzan.mp3")
+let brave = new Movie ("Brave",2011,"EEUU","Animación","./brave.jpg","./brave.mp3")
+
+let pelis = [gdlg,hp1,viw,ironman,primos,grease,xmen,hp2,titanic,hercules,elreyleon,aladdin,pocahontas,tarzan,toystory,brave];
 
 let movies = "";
     for (let i=0; i < pelis.length;i++){
-        movies += `<div class="pelicula">
+        movies += `<div class="pelicula" onclick="playSound(${i})" onclick="stopSound(${i})">
                     <div class="book">
                     <div class="info">
                         <p>${pelis[i].title}</p>
@@ -47,14 +56,41 @@ function newMovie(){
 
     let newMovie = new Movie (titulo,estreno,pais,genero,foto)
     pelis.push(newMovie)
+    for (let i=0; i < pelis.length;i++){
+        newMovie += `<div class="pelicula">
+                    <div class="book">
+                    <div class="info">
+                        <p>${pelis[i].title}</p>
+                        <p>${pelis[i].releaseYear}</p>
+                        <p>${pelis[i].nacionality}</p>
+                    </div>
+                    <div class="cover" class="audio">
+                        <img class= "imagen" src="${pelis[i].photo}">
+                        </div>
+                    </div>
+                    </div>`
+    };
+$("#movies").html(newMovie);
 }
 
 let more = document.querySelector(".imagen");
 let audioArr = document.getElementsByTagName("audio");
-console.log(audioArr)
-more.addEventListener("mouseenter", () => {
-    for (let i=0; i<pelis.length;i++){
-        audioArr[i].play();
-    }    
-})
+console.log(audioArr);
 
+let currentAudio = null; 
+
+function playSound(id) {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+
+  currentAudio = audioArr[id];
+  currentAudio.play();
+}
+
+function stopSound(id) {
+  audioArr[id].pause();
+  audioArr[id].currentTime = 0;
+  currentAudio = null;
+}
